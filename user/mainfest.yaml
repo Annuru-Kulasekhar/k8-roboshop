@@ -59,7 +59,7 @@ spec:
           failureThereshold: 2
           periodSeconds: 10
         envFrom:
-        - configMapReg:
+        - configMapRef:
           name: user
 ---
 apiVersion: v1
