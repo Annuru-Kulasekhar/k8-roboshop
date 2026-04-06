@@ -46,7 +46,7 @@ spec:
             memory: "120Mi"
             cpu: "100m"
         readinessProbe:
-          tcpSpot:
+          tcpSocket:
             port: 8080
           failureThreshold: 2
           periodSeconds: 10
