@@ -23,4 +23,23 @@ spec:
     spec:
       containers:
       - name: redis
-        image:
+        image: redis:7.0
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: redis
+  namespace: roboshop
+  labels:
+    project: roboshop
+    tier: db
+    component: redis
+spec:
+  selector:
+    project: roboshop
+    tier: db
+    component: redis
+  ports:
+  - protocol: tcp
+    port: 6379
+    targetPort: 6379
