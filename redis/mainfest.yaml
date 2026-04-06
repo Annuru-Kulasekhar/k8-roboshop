@@ -40,6 +40,6 @@ spec:
     tier: db
     component: redis
   ports:
-  - protocol: tcp
+  - protocol: TCP
     port: 6379
     targetPort: 6379
