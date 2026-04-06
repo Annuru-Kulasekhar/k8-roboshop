@@ -73,7 +73,7 @@ metadata:
     component: user
 spec:
   selector:
-    project: rooshop
+    project: roboshop
     tier: backend
     component: user
   ports:
