@@ -35,7 +35,7 @@ spec:
     spec:
       containers:
       - name: mysql
-        image: mysql:8.0
+        image: annurukulasekhar/mysql:1.4.0
         envFrom:
         - configMapRef:
            name: mysql
