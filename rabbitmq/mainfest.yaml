@@ -27,19 +27,19 @@ spec:
       project: roboshop
       tier: db
       component: rabbitmq
-    template:
-      metadata:
-        labels:
-          project: roboshop
-          tier: db
-          component: rabbitmq
-      spec:
-        containers:
-        - name: rabbitmq
-          image: rabbitmq:3
-        envFrom:
-        - configMapRef:
-          name: rabbitmq
+  template:
+    metadata:
+      labels:
+        project: roboshop
+        tier: db
+        component: rabbitmq
+    spec:
+      containers:
+      - name: rabbitmq
+        image: rabbitmq:3
+      envFrom:
+      - configMapRef:
+        name: rabbitmq
 ---
 apiVersion: v1
 kind: Service
